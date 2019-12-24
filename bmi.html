@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bmi.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <div class="jumbotron"><h2>Body Mass Index(BMI) calculator</h2></div>
+            <form>
+            <div class="input-group mt-3 mb-3">
+                <div class="input-group-prepend">
+                    <span class="btn btn-primary">Weight</span>
+                </div>
+                <div>
+                    <input type="text" class="form-control" placeholder="Input your weight" id="weight">
+                </div>
+                <div class="input-group-append">
+                        <span class="btn btn-outline-secondary">Kg</span>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Grams</a>
+                            <a class="dropdown-item" href="#">Grams</a>
+                        </div>
+                </div>
+                <div class="input-group mt-3 mb-3">
+                    <div class="input-group-prepend">
+                        <span class="btn btn-primary">Heigth</span>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Input your heigth" id="heigth">
+                    </div>
+                    <div class="input-group-append">
+                            <span class="btn btn-outline-secondary">M</span>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Grams</a>
+                                <a class="dropdown-item" href="#">Grams</a>
+                            </div>
+                </div>
+            </div>
+            <p id="con" class="text-danger"></p>
+        </div>
+            <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+        </form>
+       
+        <span id="bm"></span><h1 id="solu" class="text-primary"></h1>
+        <p id="dia"></p>
+        <h3 id="resu" class="text-secondary"></h3>
+        <p id="eva"></p>
+        <h3 id="evalu"></h3>
+        </div>
+    </body>
+</html>
